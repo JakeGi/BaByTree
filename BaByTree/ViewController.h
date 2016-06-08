@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIScrollViewDelegate>
+{
+    UIScrollView *myscrollview;
+}
+@property (nonatomic,retain) IBOutlet UIScrollView *myscrollview;
+@property (weak, nonatomic) IBOutlet UIImageView *imageViews;
 
 
 @end

@@ -15,6 +15,8 @@
 		D16AEED41D0249F6006EAC7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16AEED21D0249F6006EAC7C /* LaunchScreen.storyboard */; };
 		D16AEEDF1D0249F6006EAC7C /* BaByTreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D16AEEDE1D0249F6006EAC7C /* BaByTreeTests.m */; };
 		D16AEEEA1D0249F6006EAC7C /* BaByTreeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D16AEEE91D0249F6006EAC7C /* BaByTreeUITests.m */; };
+		D16BCC061D079B6F00276EAE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D16BCC051D079B6F00276EAE /* Podfile */; };
+		D1ADCB1C1D030CA0006C0233 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1ADCB1B1D030CA0006C0233 /* AnimationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		D16AEEE51D0249F6006EAC7C /* BaByTreeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaByTreeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D16AEEE91D0249F6006EAC7C /* BaByTreeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaByTreeUITests.m; sourceTree = "<group>"; };
 		D16AEEEB1D0249F6006EAC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D16BCC051D079B6F00276EAE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		D1ADCB1A1D030CA0006C0233 /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
+		D1ADCB1B1D030CA0006C0233 /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 		D16AEEB81D0249F5006EAC7C = {
 			isa = PBXGroup;
 			children = (
+				D16BCC051D079B6F00276EAE /* Podfile */,
 				D16AEEC31D0249F5006EAC7C /* BaByTree */,
 				D16AEEDD1D0249F6006EAC7C /* BaByTreeTests */,
 				D16AEEE81D0249F6006EAC7C /* BaByTreeUITests */,
@@ -101,6 +107,10 @@
 		D16AEEC31D0249F5006EAC7C /* BaByTree */ = {
 			isa = PBXGroup;
 			children = (
+				D16AEF0C1D02542B006EAC7C /* Other */,
+				D16AEEF91D02509F006EAC7C /* Controller */,
+				D16AEEF81D025095006EAC7C /* View */,
+				D16AEEF71D025082006EAC7C /* Model */,
 				D16AEEC71D0249F5006EAC7C /* AppDelegate.h */,
 				D16AEEC81D0249F5006EAC7C /* AppDelegate.m */,
 				D16AEECA1D0249F5006EAC7C /* ViewController.h */,
@@ -138,6 +148,36 @@
 				D16AEEEB1D0249F6006EAC7C /* Info.plist */,
 			);
 			path = BaByTreeUITests;
+			sourceTree = "<group>";
+		};
+		D16AEEF71D025082006EAC7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D16AEEF81D025095006EAC7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D16AEEF91D02509F006EAC7C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D16AEF0C1D02542B006EAC7C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D1ADCB1A1D030CA0006C0233 /* AnimationViewController.h */,
+				D1ADCB1B1D030CA0006C0233 /* AnimationViewController.m */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +288,7 @@
 			files = (
 				D16AEED41D0249F6006EAC7C /* LaunchScreen.storyboard in Resources */,
 				D16AEED11D0249F5006EAC7C /* Assets.xcassets in Resources */,
+				D16BCC061D079B6F00276EAE /* Podfile in Resources */,
 				D16AEECF1D0249F5006EAC7C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +316,7 @@
 			files = (
 				D16AEECC1D0249F5006EAC7C /* ViewController.m in Sources */,
 				D16AEEC91D0249F5006EAC7C /* AppDelegate.m in Sources */,
+				D1ADCB1C1D030CA0006C0233 /* AnimationViewController.m in Sources */,
 				D16AEEC61D0249F5006EAC7C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,10 +458,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BaByTree/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiangjunjie.BaByTree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -427,10 +473,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BaByTree/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiangjunjie.BaByTree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -499,6 +549,7 @@
 				D16AEEF01D0249F6006EAC7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D16AEEF11D0249F6006EAC7C /* Build configuration list for PBXNativeTarget "BaByTreeTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +558,7 @@
 				D16AEEF31D0249F6006EAC7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D16AEEF41D0249F6006EAC7C /* Build configuration list for PBXNativeTarget "BaByTreeUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +567,7 @@
 				D16AEEF61D0249F6006EAC7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
