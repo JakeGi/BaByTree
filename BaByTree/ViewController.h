@@ -10,10 +10,13 @@
 
 @interface ViewController : UIViewController <UIScrollViewDelegate>
 {
-    UIScrollView *myscrollview;
+    
 }
 @property (nonatomic,retain) IBOutlet UIScrollView *myscrollview;
 @property (weak, nonatomic) IBOutlet UIImageView *imageViews;
+//页码
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (nonatomic, strong) NSTimer *timer;
 
 
 @end
