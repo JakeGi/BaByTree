@@ -25,17 +25,27 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAG-bH-exn">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <state key="normal" title="宝宝出生还有 0天"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="157" y="273" width="60" height="30"/>
-                                        </variation>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uY4-Pr-zgC">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="3PR-vt-NB6"/>
+                                            <constraint firstAttribute="width" constant="42" id="vse-ob-4eX"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="166" y="328" width="42" height="21"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="3PR-vt-NB6"/>
+                                                <exclude reference="vse-ob-4eX"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="3PR-vt-NB6"/>
+                                                <include reference="vse-ob-4eX"/>
+                                            </mask>
                                         </variation>
                                     </label>
                                 </subviews>
@@ -44,8 +54,10 @@
                                     <constraint firstItem="uY4-Pr-zgC" firstAttribute="leading" secondItem="uNr-Ny-aHo" secondAttribute="leading" constant="15" id="1Pp-et-LWZ"/>
                                     <constraint firstItem="uY4-Pr-zgC" firstAttribute="centerX" secondItem="uNr-Ny-aHo" secondAttribute="centerX" id="BdK-RA-nxf"/>
                                     <constraint firstAttribute="trailing" secondItem="uY4-Pr-zgC" secondAttribute="trailing" constant="15" id="CCd-tk-QNP"/>
+                                    <constraint firstItem="uY4-Pr-zgC" firstAttribute="centerX" secondItem="iAG-bH-exn" secondAttribute="centerX" id="GFG-Hc-f2y"/>
                                     <constraint firstItem="iAG-bH-exn" firstAttribute="centerX" secondItem="uNr-Ny-aHo" secondAttribute="centerX" id="OLX-u4-Fcy"/>
                                     <constraint firstItem="uY4-Pr-zgC" firstAttribute="top" secondItem="iAG-bH-exn" secondAttribute="bottom" constant="25" id="e4o-TG-ODC"/>
+                                    <constraint firstAttribute="bottom" secondItem="uY4-Pr-zgC" secondAttribute="bottom" constant="251" id="eDo-cA-76b"/>
                                     <constraint firstAttribute="height" constant="600" id="uHi-a4-oxH"/>
                                 </constraints>
                                 <variation key="default">
@@ -59,7 +71,9 @@
                                         <exclude reference="1Pp-et-LWZ"/>
                                         <exclude reference="BdK-RA-nxf"/>
                                         <exclude reference="CCd-tk-QNP"/>
+                                        <exclude reference="GFG-Hc-f2y"/>
                                         <exclude reference="e4o-TG-ODC"/>
+                                        <exclude reference="eDo-cA-76b"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -70,10 +84,12 @@
                                     <mask key="constraints">
                                         <include reference="uHi-a4-oxH"/>
                                         <include reference="OLX-u4-Fcy"/>
-                                        <include reference="1Pp-et-LWZ"/>
-                                        <include reference="BdK-RA-nxf"/>
-                                        <include reference="CCd-tk-QNP"/>
+                                        <exclude reference="1Pp-et-LWZ"/>
+                                        <exclude reference="BdK-RA-nxf"/>
+                                        <exclude reference="CCd-tk-QNP"/>
+                                        <include reference="GFG-Hc-f2y"/>
                                         <include reference="e4o-TG-ODC"/>
+                                        <include reference="eDo-cA-76b"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -133,9 +149,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="167" y="279" width="42" height="21"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
