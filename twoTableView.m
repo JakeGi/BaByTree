@@ -33,11 +33,16 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 20;
 }
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 80;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
-    cell.textLabel.text = @"反复";
-    cell.detailTextLabel.text = @"分别为北京";
+    cell.textLabel.text = @"这是测试文字";
+    cell.imageView.image = [UIImage imageNamed:@"mt_invoice_question"];
+    cell.detailTextLabel.text = @"这是测试详情，————————————————————————————";
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     //cell.backgroundColor = [UIColor redColor];
     return cell;

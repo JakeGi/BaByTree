@@ -46,8 +46,7 @@
     scrollView.directionalLockEnabled = YES;
     
     scrollView.contentInset = UIEdgeInsetsMake(-64, 0, -49, 0);
-    //[tableView addSubview:scrollView];
-    scrollView.contentSize = CGSizeMake(2 *self.view.width, self.view.height);
+        scrollView.contentSize = CGSizeMake(2 *self.view.width, self.view.height);
     scrollView.showsHorizontalScrollIndicator = NO;
     
     [self.view addSubview:scrollView];
@@ -79,7 +78,7 @@
 }
 
 - (void)segmentBtnClick{
-    NSLog(@"改变值");
+    NSLog(@"切换页面");
     self.scrollView.contentOffset = CGPointMake(self.segment.selectedSegmentIndex * self.view.width, 0);
 }
 

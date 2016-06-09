@@ -20,7 +20,6 @@
 		D16BCC0F1D07FB0C00276EAE /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D16BCC0E1D07FB0C00276EAE /* FourViewController.m */; };
 		D16BCC121D07FB1600276EAE /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D16BCC111D07FB1600276EAE /* FifthViewController.m */; };
 		D1ADCB1C1D030CA0006C0233 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1ADCB1B1D030CA0006C0233 /* AnimationViewController.m */; };
-		D1DBBB071D083D2800904230 /* Sengment.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DBBB061D083D2800904230 /* Sengment.m */; };
 		D1DBBB181D084E6400904230 /* UIView+sengMent.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DBBB171D084E6400904230 /* UIView+sengMent.m */; };
 		D1DBBB241D0850D600904230 /* twoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DBBB231D0850D600904230 /* twoTableView.m */; };
 		D1DBBB271D0850E500904230 /* oneTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DBBB261D0850E500904230 /* oneTableView.m */; };
@@ -70,8 +69,6 @@
 		D16BCC111D07FB1600276EAE /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
 		D1ADCB1A1D030CA0006C0233 /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
 		D1ADCB1B1D030CA0006C0233 /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
-		D1DBBB051D083D2800904230 /* Sengment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sengment.h; path = ../Sengment.h; sourceTree = "<group>"; };
-		D1DBBB061D083D2800904230 /* Sengment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sengment.m; path = ../Sengment.m; sourceTree = "<group>"; };
 		D1DBBB161D084E6400904230 /* UIView+sengMent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+sengMent.h"; sourceTree = "<group>"; };
 		D1DBBB171D084E6400904230 /* UIView+sengMent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+sengMent.m"; sourceTree = "<group>"; };
 		D1DBBB221D0850D600904230 /* twoTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = twoTableView.h; path = ../twoTableView.h; sourceTree = "<group>"; };
@@ -219,8 +216,6 @@
 		D1DBBB0F1D084B2B00904230 /* circle */ = {
 			isa = PBXGroup;
 			children = (
-				D1DBBB051D083D2800904230 /* Sengment.h */,
-				D1DBBB061D083D2800904230 /* Sengment.m */,
 				D16BCC071D07ED3A00276EAE /* SecondViewController.h */,
 				D16BCC081D07ED3A00276EAE /* SecondViewController.m */,
 				D1DBBB161D084E6400904230 /* UIView+sengMent.h */,
@@ -371,7 +366,6 @@
 				D16BCC0F1D07FB0C00276EAE /* FourViewController.m in Sources */,
 				D16BCC091D07ED3A00276EAE /* SecondViewController.m in Sources */,
 				D1DBBB241D0850D600904230 /* twoTableView.m in Sources */,
-				D1DBBB071D083D2800904230 /* Sengment.m in Sources */,
 				D16AEECC1D0249F5006EAC7C /* ViewController.m in Sources */,
 				D16BCC0C1D07FAFA00276EAE /* ThirdViewController.m in Sources */,
 				D16AEEC91D0249F5006EAC7C /* AppDelegate.m in Sources */,
