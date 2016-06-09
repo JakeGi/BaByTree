@@ -64,7 +64,7 @@
 
 - (void)settingSegment{
     
-    UISegmentedControl *segment = [[UISegmentedControl alloc] initWithItems:@[@"消息",@"电话"]];
+    UISegmentedControl *segment = [[UISegmentedControl alloc] initWithItems:@[@"热帖",@"我的圈"]];
     
     self.navigationItem.titleView = segment;
     

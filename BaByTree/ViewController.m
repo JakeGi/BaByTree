@@ -18,6 +18,8 @@
 {
     [super viewDidLoad];
     
+    _DetileLable.text = @"babybabybabybabybabybabybabybabybabybabybabybabybabybabybabybabybabybabybabybabybabybabybaby";
+    
     // 当视图对象的userInteractionEnabled设置为NO的时候，用户触发的事件，如触摸，键盘等，将会被该视图忽略（其他视图照常响应），并且该视图对象也会从事件响应队列中被移除。 当userInteractionEnabled设为YES时，则事件可以正常的传递给该视图对象。 userInteractionEnabled的属性默认值就是YES。
     [[self imageViews] setUserInteractionEnabled:YES];
     

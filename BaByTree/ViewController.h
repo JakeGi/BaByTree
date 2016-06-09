@@ -14,9 +14,8 @@
 }
 @property (nonatomic,retain) IBOutlet UIScrollView *myscrollview;
 @property (weak, nonatomic) IBOutlet UIImageView *imageViews;
-//页码
-@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 @property (nonatomic, strong) NSTimer *timer;
+@property (weak, nonatomic) IBOutlet UILabel *DetileLable;
 
 
 @end
